@@ -1,0 +1,16 @@
+name: Simple Job
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Hello:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Hello World
+        uses: actions/hello@v1
+        with:
+          name: World
+          message: "Hello World"
